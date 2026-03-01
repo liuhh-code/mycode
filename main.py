@@ -16,8 +16,8 @@ def parse_agrs():
     parser.add_argument('--use_biomedbert', action='store_true')
     parser.add_argument('--lr_bert_fine_tune', type=float, default=5e-6)
 
-    parser.add_argument('--image_dir', type=str, default='/home/sun/data/iu_xray/images/')
-    parser.add_argument('--ann_path', type=str, default='/home/sun/data/iu_xray/annotation.json')
+    parser.add_argument('--image_dir', type=str, default='/.../images/')
+    parser.add_argument('--ann_path', type=str, default='/.../annotation.json')
 
     parser.add_argument('--dataset_name', type=str, default='iu_xray', choices=['iu_xray', 'mimic_cxr'])
     parser.add_argument('--max_seq_length', type=int, default=60)
@@ -118,3 +118,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
